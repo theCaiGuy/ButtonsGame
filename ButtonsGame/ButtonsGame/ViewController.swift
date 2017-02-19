@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
     @IBOutlet weak var twitterButton: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var index = 0
     var seq = [Int]()
@@ -109,6 +110,7 @@ class ViewController: UIViewController {
             startButton.isHidden = false
             toggleButtons(activated: false)
             toggleSocialButtons(hidden: false)
+            scoreLabel.text = "Share:"
             return
         }
         index+=1
@@ -157,6 +159,7 @@ class ViewController: UIViewController {
         
         // Begin with 0 points
         score = 0
+        scoreLabel.text = "Score:"
         scoreBoard.text = "0"
         
         // Constant color combos
