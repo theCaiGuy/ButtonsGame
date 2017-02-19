@@ -182,7 +182,7 @@ class ViewController: UIViewController {
         if (SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook)) {
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             socialController?.setInitialText("I scored \(lastScore) points on Buttons! Betcha can't get more than me!")
-            let internetURL = URL(string: "https://github.com/theCaiGuy/Buttons")
+            let internetURL = URL(string: "https://github.com/theCaiGuy/ButtonsGame")
             socialController?.add(internetURL)
             
             self.present(socialController!, animated: true, completion: nil)
@@ -193,7 +193,7 @@ class ViewController: UIViewController {
         if (SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter)) {
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             socialController?.setInitialText("I scored \(lastScore) points on Buttons! Betcha can't get more than me!")
-            let internetURL = URL(string: "https://github.com/theCaiGuy/Buttons")
+            let internetURL = URL(string: "https://github.com/theCaiGuy/ButtonsGame")
             socialController?.add(internetURL)
             
             self.present(socialController!, animated: true, completion: nil)
